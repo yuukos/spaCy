@@ -10,7 +10,7 @@ TOKENIZER_SUFFIXES = (
     LIST_ELLIPSES +
     LIST_PUNCT +
     LIST_QUOTES +
-    [r'.']
+    [r'\.']
 )
 
 
