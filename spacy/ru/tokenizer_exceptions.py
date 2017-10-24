@@ -32,6 +32,22 @@ DAYS_OF_WEEK = {
 }
 
 
+SHORTENIGS = {
+    'т.п.': [
+        {ORTH: 'т.', LEMMA: 'тому'},
+        {ORTH: 'п.', LEMMA: 'подобное'}
+    ],
+    'т.д.': [
+        {ORTH: 'т.', LEMMA: 'так'},
+        {ORTH: 'д.', LEMMA: 'далее'}
+    ],
+    'т.о.': [
+        {ORTH: 'т.', LEMMA: 'таким'},
+        {ORTH: 'о.', LEMMA: 'образом'}
+    ],
+}
+
+
 OTHER = {
     '\n': [
         {ORTH: '\n'}
@@ -44,4 +60,5 @@ OTHER = {
 
 TOKENIZER_EXCEPTIONS = dict(EXCEPTIONS)
 TOKENIZER_EXCEPTIONS.update(DAYS_OF_WEEK)
+TOKENIZER_EXCEPTIONS.update(SHORTENIGS)
 TOKENIZER_EXCEPTIONS.update(OTHER)
